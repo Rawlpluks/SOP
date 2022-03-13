@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="732.0" prefWidth="450.0" styleClass="signUpBackground" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.sop.SignupController">
+   <children>
+      <Label layoutX="43.0" layoutY="92.0" text="Anmod om oprettelse " textFill="#2c373c">
+         <font>
+            <Font name="System Bold Italic" size="35.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameText" layoutX="81.0" layoutY="238.0" prefHeight="30.0" prefWidth="289.0" promptText="Navn" styleClass="loginTextField" stylesheets="@styles.css">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="passwordText" layoutX="81.0" layoutY="304.0" prefHeight="30.0" prefWidth="289.0" promptText="Kodeord" styleClass="loginTextField">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+      <Text fx:id="errorMessage" fill="RED" layoutX="224.0" layoutY="496.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" " />
+      <Text layoutX="74.0" layoutY="575.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alle ansatte skal bruge deres arbejdsmail som brugernavn" />
+      <Button layoutX="181.0" layoutY="517.0" mnemonicParsing="false" onAction="#signup" prefHeight="35.0" prefWidth="87.0" styleClass="login" stylesheets="@styles.css" text="Anmod">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="136.0" layoutY="671.0" mnemonicParsing="false" onAction="#backToLogin" prefHeight="35.0" prefWidth="180.0" styleClass="login" stylesheets="@styles.css" text="Tilbage til login" />
+      <PasswordField fx:id="jobText" layoutX="81.0" layoutY="434.0" prefHeight="30.0" prefWidth="289.0" promptText="Jobposition? " styleClass="loginTextField">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+      <Text layoutX="83.0" layoutY="596.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Det er krævet at ansatte skal opgive deres jobposition " />
+      <Text layoutX="174.0" layoutY="609.0" strokeType="OUTSIDE" strokeWidth="0.0" text="og hvor de arbejder" />
+      <PasswordField fx:id="passwordRepeat" layoutX="81.0" layoutY="370.0" prefHeight="30.0" prefWidth="289.0" promptText="Gentag kodeord" styleClass="loginTextField">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+      <TextField fx:id="usernameText1" layoutX="80.0" layoutY="172.0" prefHeight="30.0" prefWidth="289.0" promptText="Brugernavn/Email" styleClass="loginTextField" stylesheets="@styles.css">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

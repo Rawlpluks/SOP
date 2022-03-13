@@ -1,0 +1,27 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11. mar. 2022, 11.04.09
+    Author     : clara
+*/
+
+.signUpBackground{
+    -fx-background-color: linear-gradient(to bottom, #F6FBFE, #B0E0FD);
+}
+.loginTextField{
+    -fx-background-radius: 0px;
+    -fx-border-color: #3C4A52;
+    -fx-border-width: 1px 1px 4px 1px;
+    -fx-background-color: #F4F4F4;
+}
+.loginTextField:hover{
+    -fx-border-color:#9DA4C4;
+}
+
+.login{
+    -fx-border-color:#3C4A52;
+} 
+

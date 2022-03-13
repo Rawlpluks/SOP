@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="732.0" prefWidth="450.0" styleClass="signUpBackground" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.sop.ViewPatientController">
+   <children>
+      <ScrollPane prefHeight="732.0" prefWidth="450.0">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1036.0" prefWidth="440.0" styleClass="signUpBackground" stylesheets="@styles.css">
+               <children>
+                  <Label layoutX="37.0" layoutY="56.0" text="Patient information" textFill="#2c373c">
+                     <font>
+                        <Font name="System Bold Italic" size="39.0" />
+                     </font>
+                  </Label>
+                  <Text fill="RED" layoutX="218.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" " />
+                  <TextField fx:id="name" editable="false" layoutX="83.0" layoutY="207.0" prefHeight="30.0" prefWidth="289.0" promptText="Navn " styleClass="loginTextField" stylesheets="@styles.css">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <Line endX="148.0" layoutX="251.0" layoutY="123.0" startX="-211.0" stroke="#2c373c" strokeWidth="3.0" />
+                  <Button layoutX="105.0" layoutY="511.0" mnemonicParsing="false" onAction="#savePicture" prefHeight="35.0" prefWidth="111.0" styleClass="login" stylesheets="@styles.css" text="Tag billede">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="pictureName" layoutX="101.0" layoutY="461.0" prefHeight="35.0" prefWidth="237.0" promptText="Navn billedet skal gemmes under" styleClass="loginTextField" stylesheets="@styles.css">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <Label fx:id="cprText" layoutX="39.0" layoutY="140.0" text="(..CPR..)" textFill="#2c373c">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="reference" editable="false" layoutX="83.0" layoutY="273.0" prefHeight="30.0" prefWidth="289.0" promptText="Henvisende instans" styleClass="loginTextField" stylesheets="@styles.css">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <ListView fx:id="pictureList" layoutX="37.0" layoutY="556.0" prefHeight="419.0" prefWidth="381.0" />
+                  <Button layoutX="144.0" layoutY="987.0" mnemonicParsing="false" onAction="#backToMain" prefHeight="35.0" prefWidth="168.0" styleClass="login" stylesheets="@styles.css" text="Tilbage til oversigten">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="228.0" layoutY="511.0" mnemonicParsing="false" onAction="#removePicture" prefHeight="35.0" prefWidth="111.0" styleClass="login" stylesheets="@styles.css" text="Fjern billede">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Text fx:id="errorMessage" fill="RED" layoutX="110.0" layoutY="424.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" " textAlignment="CENTER" wrappingWidth="222.287109375" />
+                  <Button layoutX="136.0" layoutY="330.0" mnemonicParsing="false" onAction="#viewConsent" prefHeight="35.0" prefWidth="170.0" styleClass="login" stylesheets="@styles.css" text="Se samtykkeerklæring">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

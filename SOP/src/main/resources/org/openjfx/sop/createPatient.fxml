@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="732.0" prefWidth="450.0" styleClass="signUpBackground" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.sop.CreatePatientController">
+   <children>
+      <ScrollPane prefHeight="732.0" prefWidth="450.0">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="739.0" prefWidth="434.0" styleClass="signUpBackground" stylesheets="@styles.css">
+               <children>
+                  <Label layoutX="95.0" layoutY="54.0" text="Opret patient" textFill="#2c373c">
+                     <font>
+                        <Font name="System Bold Italic" size="40.0" />
+                     </font>
+                  </Label>
+                  <Text fill="RED" layoutX="218.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" " />
+                  <Line endX="148.0" layoutX="251.0" layoutY="123.0" startX="-211.0" stroke="#2c373c" strokeWidth="3.0" />
+                  <TextField fx:id="name" layoutX="74.0" layoutY="198.0" prefHeight="30.0" prefWidth="289.0" promptText="Navn " styleClass="loginTextField" stylesheets="@styles.css">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="CPR" layoutX="75.0" layoutY="266.0" prefHeight="30.0" prefWidth="289.0" promptText="CPR" styleClass="loginTextField" stylesheets="@styles.css">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="reference" layoutX="75.0" layoutY="335.0" prefHeight="30.0" prefWidth="289.0" promptText="Henvisende instans" styleClass="loginTextField" stylesheets="@styles.css">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <Button layoutX="178.0" layoutY="638.0" mnemonicParsing="false" onAction="#savePatient" prefHeight="35.0" prefWidth="87.0" styleClass="login" stylesheets="@styles.css" text="Opret">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Text fx:id="errorMessage" fill="RED" layoutX="214.0" layoutY="552.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" " />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
