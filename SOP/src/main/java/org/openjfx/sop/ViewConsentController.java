@@ -59,6 +59,6 @@ public class ViewConsentController implements Initializable{
     }
     @FXML
     public void backToMain(ActionEvent event) throws IOException, Exception{
-        
+        App.setRoot("main");
     }
 }

@@ -12,7 +12,7 @@ import javafx.scene.text.Text;
 public class SignupController {
 
     @FXML
-    private TextField usernameText;
+    private TextField usernameText1;
     @FXML
     private PasswordField passwordText;
     @FXML
@@ -29,13 +29,13 @@ public class SignupController {
         errorMessage.setText(" ");
         
         //check if all fields is filled
-        if(!usernameText.getText().isBlank()
+        if(!usernameText1.getText().isBlank()
                 && !passwordText.getText().isBlank()
                 && !passwordRepeat.getText().isBlank()
                 && !jobText.getText().isBlank()){
             //check if user is already exist
             UserDatabaseMethods userDatabaseMethods = new UserDatabaseMethods();
-            if(!userDatabaseMethods.checkForMatchingUser(usernameText.getText())){
+            if(!userDatabaseMethods.checkForMatchingUser(usernameText1.getText())){
                 //check if password have a special & uppercase character & at least 8 characters
                 boolean passwordMeetsRequirements = false;
                 char[] passwordChars = passwordText.getText().toCharArray();
@@ -58,10 +58,10 @@ public class SignupController {
                         if(passwordMeetsRequirements){
                             if(passwordText.getText().equals(passwordRepeat.getText())){
                                 SecurityMethods securityMethods = new SecurityMethods();
-                                userDatabaseMethods.createUser(new User(usernameText.getText(), securityMethods.hexString(passwordText.getText()),
+                                userDatabaseMethods.createUser(new User(usernameText1.getText(), securityMethods.hexString(passwordText.getText()),
                                 nameText.getText(), jobText.getText()));
                                 
-                                App.setLoggedInUser(userDatabaseMethods.getloggedInUser(usernameText.getText()));
+                                App.setLoggedInUser(userDatabaseMethods.getloggedInUser(usernameText1.getText()));
                                 App.setRoot("main");
                             }else{
                                 errorMessage.setText("Password meets requirements, but doesn't match");
@@ -81,6 +81,7 @@ public class SignupController {
         }else{
             errorMessage.setText("All fields need to be filled");
         }
+        
     }
 
     @FXML

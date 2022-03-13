@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="732.0" prefWidth="450.0" styleClass="signUpBackground" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.sop.ViewConsentController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="732.0" prefWidth="450.0" styleClass="signUpBackground" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.sop.ViewConsentController">
    <children>
       <ScrollPane prefHeight="732.0" prefWidth="450.0">
          <content>
@@ -41,7 +41,7 @@
                   <TextField fx:id="consent4" editable="false" layoutX="19.0" layoutY="789.0" prefHeight="30.0" prefWidth="102.0" promptText="JA/NEJ" styleClass="loginTextField" stylesheets="@styles.css" />
                   <Line endX="-141.0" layoutX="232.0" layoutY="675.0" startX="-211.0" stroke="#2c373c" strokeWidth="3.0" />
                   <Line endX="-141.0" layoutX="230.0" layoutY="513.0" startX="-211.0" stroke="#2c373c" strokeWidth="3.0" />
-                  <Button layoutX="152.0" layoutY="987.0" mnemonicParsing="false" onAction="#saveConsent" prefHeight="35.0" prefWidth="111.0" styleClass="login" stylesheets="@styles.css" text="Tilbage ">
+                  <Button layoutX="152.0" layoutY="987.0" mnemonicParsing="false" onAction="#backToMain" prefHeight="35.0" prefWidth="111.0" styleClass="login" stylesheets="@styles.css" text="Tilbage ">
                      <font>
                         <Font size="14.0" />
                      </font>
