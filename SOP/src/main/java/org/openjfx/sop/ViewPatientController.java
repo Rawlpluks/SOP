@@ -86,9 +86,11 @@ public class ViewPatientController implements Initializable {
             App.setPicture(createdPicture);
             overviewPicture.add(createdPicture);
             updateList();
+            App.setRoot("camera");
+        }else{
+            errorMessage.setText("Giv venligst billedet et navn");
         }
         
-        App.setRoot("camera");
     }
 
     @FXML
