@@ -100,7 +100,7 @@ public class ViewPatientController implements Initializable {
             overviewPicture.remove(pictureList.getSelectionModel().getSelectedIndex());
             updateList();
         }else{
-            errorMessage.setText("Vælg venligst den patient du vil slette");
+            errorMessage.setText("Vælg venligst det billede du vil slette");
         }
     }
 
